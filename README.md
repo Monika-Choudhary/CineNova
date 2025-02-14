@@ -1,4 +1,4 @@
-# CINENOVA Film Database
+# CineNova Film Database
 
 This is a simple film database that displays information about movies from an API. The project was built using **Vanilla TypeScript**, **Tailwind CSS**, and **Bun Vite**.
 
