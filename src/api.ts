@@ -12,7 +12,7 @@ export async function fetchMovies(query: string) {
 
 export async function fetchMovieDetails(movieId: number) {
   const response = await fetch(
-    `${BASE_URL}/movie/${movieId}?api_key=${API_KEY}`
+    `${BASE_URL}/movie/${movieId}?api_key=${API_KEY}&append_to_response=videos,credits,watch/providers`
   );
   const data = await response.json();
   return data;
