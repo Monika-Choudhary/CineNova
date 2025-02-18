@@ -17,3 +17,12 @@ export async function fetchMovieDetails(movieId: number) {
   const data = await response.json();
   return data;
 }
+
+export async function fetchCurrentMovies() {
+  const response = await fetch(
+    `${BASE_URL}/movie/now_playing?api_key=${API_KEY}`
+  );
+  const data = await response.json();
+
+  return data.results;
+}

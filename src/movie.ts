@@ -12,7 +12,7 @@ if (movieId) {
 
     // 🎭 Nur Hauptrollen anzeigen
     const leadActors = movie.credits.cast
-      .filter((actor: any) => actor.order < 5) // Hauptdarsteller haben meist niedrige "order"-Werte
+      .filter((actor: any) => actor.order < 8) // Hauptdarsteller haben meist niedrige "order"-Werte
       .map((actor: any) => `
         <div class="text-center">
           <img src="https://image.tmdb.org/t/p/w185${actor.profile_path}" class="rounded-full w-24 h-24 mx-auto">
@@ -45,8 +45,8 @@ if (movieId) {
       <h2 class="text-2xl text-gold font-semibold mt-6">📺 Trailer</h2>
       ${trailerEmbed}
       
-      <h2 class="text-2xl text-gold font-semibold mt-6">🎥 Streaming-Anbieter</h2>
-      <div class="mt-4">${providerList}</div>
+      <h2 class="text-2xl text-black font-semibold mt-6">🎥 Streaming-Anbieter</h2>
+      <div class="mt-4 ">${providerList}</div>
     `;
   });
 }
