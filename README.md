@@ -1,6 +1,8 @@
-# CineNova Film Database
+![logo](public/img/CineNova_logo_2.png) # CineNova Film Database
 
-This is a simple film database that displays information about movies from an API. The project was built using **Vanilla TypeScript**, **Tailwind CSS**, and **Bun Vite**.
+> "Von Klassikern bis Blockbustern – CineNova bringt die Filmwelt zu dir!"
+
+This is a simple film database that displays information about movies from the TMDB API. The project was built using **Vanilla TypeScript**, **Tailwind CSS**, and **Bun Vite**.
 
 ## Features
 
@@ -14,3 +16,4 @@ This is a simple film database that displays information about movies from an AP
 - **Tailwind CSS:** For styling the user interface.
 - **Bun Vite:** For bundling and development.
 - **OMDb API:** For movie data.
+
