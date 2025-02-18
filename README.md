@@ -1,4 +1,7 @@
-![logo](public/img/CineNova_logo_2.png) # CineNova Film Database
+
+<img src="assets/logo.png" alt="CineNova Logo" style="width: 200px; height: auto;">
+
+![logo](public/img/CineNova_logo_1.png) # CineNova Film Database
 
 > "Von Klassikern bis Blockbustern – CineNova bringt die Filmwelt zu dir!"
 
