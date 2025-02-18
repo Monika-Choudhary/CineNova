@@ -21,7 +21,7 @@ if (movieId) {
         </div>
       `).join("");
 
-    const trailer = movie.videos.results.find((video:) => video.type === "Trailer");
+    const trailer = movie.videos.results.find((video:any) => video.type === "Trailer");
     const trailerEmbed = trailer
       ? `<iframe class="w-full h-64 mt-4" src="https://www.youtube.com/embed/${trailer.key}" frameborder="0" allowfullscreen></iframe>`
       : "<p>Kein Trailer verfügbar</p>";
