@@ -1,5 +1,5 @@
 
-<img src="./public/img/CineNova_logo_1.png" alt="CineNova Logo" style="width: 200px; height: auto;">
+<img src="./public/assets/CineNova_logo_1.png" alt="CineNova Logo" style="width: 200px; height: auto;">
 
 # CineNova Film Database
 
