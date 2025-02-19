@@ -12,18 +12,20 @@ interface Movie {
 const moviesContainer = document.getElementById("movies") as HTMLDivElement;
 
 async function displayMovies(movies: Movie[]) {
-
   if (movies.length === 0) {
     moviesContainer.innerHTML = `<p class="text-center text-red-500">Keine Filme gefunden.</p>`;
     return;
   }
 
-moviesContainer.innerHTML = movies.map((movie: Movie) => `
+  moviesContainer.innerHTML = movies
+    .map(
+      (movie: Movie) => `
 <a href="movie.html?id=${movie.id}" class"block">
 <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="rounded">
 <h2 class="text-lg mt-2">${movie.title}</h2>
 </a>`
-).join(""); ;
+    )
+    .join("");
 }
 
 async function displayCurrentMovies() {
@@ -33,9 +35,9 @@ async function displayCurrentMovies() {
 
 searchInput.addEventListener("input", async () => {
   const query = searchInput.value.trim();
-  if(!query) return;
+  if (!query) return;
 
-  const movies : Movie[] = await fetchMovies(query);
+  const movies: Movie[] = await fetchMovies(query);
   displayMovies(movies);
 });
 
