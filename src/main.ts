@@ -1,2 +1,2 @@
 import "./style.css";
-import "./router";
+import "./router/router";

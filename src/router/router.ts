@@ -1,5 +1,5 @@
-import { renderHome } from "./pages/home";
-import { renderMovieDetails } from "./pages/movie-details";
+import { renderHome } from "../pages/home";
+import { renderMovieDetails } from "../pages/movieDetails";
 
 const app = document.getElementById("app") as HTMLDivElement;
 

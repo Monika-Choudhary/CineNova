@@ -1,5 +1,5 @@
-import { fetchMovieDetails } from "../api";
-import { navigateTo } from "../router";
+import { fetchMovieDetails } from "../api/api";
+import { navigateTo } from "../router/router";
 
 export async function renderMovieDetails() {
   const app = document.getElementById("app") as HTMLDivElement;

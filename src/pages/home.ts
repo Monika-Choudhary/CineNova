@@ -1,5 +1,5 @@
-import { fetchCurrentMovies, fetchMovies } from "../api";
-import { navigateTo } from "../router";
+import { fetchCurrentMovies, fetchMovies } from "../api/api";
+import { navigateTo } from "../router/router";
 
 interface Movie {
   id: number;
