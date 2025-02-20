@@ -1,4 +1,4 @@
-import { fetchMovieDetails } from "./api";
+import { fetchMovieDetails } from "../api";
 
 
 const urlParams = new URLSearchParams(window.location.search);
