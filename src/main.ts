@@ -2,6 +2,7 @@ import "./style.css";
 import { fetchCurrentMovies, fetchMovies } from "./api";
 
 const searchInput = document.getElementById("search") as HTMLInputElement;
+const searchForm = document.getElementById("search-form") as HTMLFormElement;
 
 interface Movie {
   id: number;
@@ -33,7 +34,8 @@ async function displayCurrentMovies() {
   displayMovies(movies);
 }
 
-searchInput.addEventListener("input", async () => {
+searchForm.addEventListener("submit", async (event: Event) => {
+ event.preventDefault();
   const query = searchInput.value.trim();
   if (!query) return;
 
