@@ -33,8 +33,6 @@ body {
   color: transparent;
   font-family: poiret one, sans-serif;
   text-align: center;
-  font-size: 36px;
-  line-height: ;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -72,9 +70,9 @@ body {
 /* Fixed size for movie poster images */
 .fixed-size {
   width: 100%; /* Ensure the image takes full width of the container */
-  height: 300px; /* Adjust the height as needed */
+  height: 250px; /* Adjust the height as needed */
   object-fit: cover; /* Ensure the image covers the entire area */
-  min-height: 300px; /* Ensure a minimum height to prevent overlapping */
+  min-height: 250px; /* Ensure a minimum height to prevent overlapping */
 }
 
 /* Gold gradient button */

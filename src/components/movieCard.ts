@@ -16,7 +16,7 @@ export function MovieCard(movie: Movie) {
      <div class="gold-border fixed-size">
       <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="rounded">
     </div>
-    <h2 class="text-lg mt-2">${movie.title}</h2>
+    <h2 class="text-base text-left my-4">${movie.title}</h2>
   `;
 
   card.addEventListener("click", (event) => {
