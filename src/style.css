@@ -19,10 +19,9 @@ body {
   text-align: center;
 }
 
-  .background-cinenova {
-    background: linear-gradient(135deg, #1a1a2e, #000000);
-  }
-
+.background-cinenova {
+  background: linear-gradient(135deg, #1a1a2e, #000000);
+}
 
 /* Realistic gold text effect */
 .shiny-text {
@@ -32,6 +31,10 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  font-family: poiret one, sans-serif;
+  text-align: center;
+  font-size: 36px;
+  line-height: ;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -63,7 +66,7 @@ body {
 }
 
 .gold-border:hover {
-  transform: scale(1.10); /* Slightly enlarge the image on hover */
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
 }
 
 /* Fixed size for movie poster images */
@@ -83,9 +86,12 @@ body {
   @apply bg-gradient-to-r from-[#daa520] via-[#ffd700] to-[#b8860b];
 }
 
+/* Gold gradient input border on focus with rounded edges */
 .gold-input:focus {
   background-color: none;
   outline: none;
+  border-top-right-radius: 4px; /* Rounded top left corner */
+  border-bottom-right-radius: 4px; /* Rounded bottom left corner */
   border: 2px solid transparent;
   border-image: linear-gradient(90deg, #b8860b, #ffd700, #daa520, #b8860b) 1;
 }
