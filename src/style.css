@@ -19,6 +19,11 @@ body {
   text-align: center;
 }
 
+  .background-cinenova {
+    background: linear-gradient(135deg, #1a1a2e, #000000);
+  }
+
+
 /* Realistic gold text effect */
 .shiny-text {
   font-weight: bold;
@@ -34,6 +39,7 @@ body {
 .gold-border {
   position: relative;
   display: inline-block;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .gold-border::before {
@@ -54,6 +60,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.gold-border:hover {
+  transform: scale(1.10); /* Slightly enlarge the image on hover */
 }
 
 /* Fixed size for movie poster images */
