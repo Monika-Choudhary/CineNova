@@ -13,8 +13,8 @@ export async function renderHome() {
   app.innerHTML = ` 
    <h1 class="text-4xl text-gold text-center font-poiret shiny-text font-bold">CineNova 🎬</h1>
     <form id="search-form" class="flex mt-4">
-      <input id="search" type="text" placeholder="Film suchen..." class="flex-grow p-2 bg-gray-800 text-white rounded-l">
-      <button type="submit" class="rounded-r bg-gold text-black p-2">Search</button>
+      <input id="search" type="text" placeholder="Film suchen..." class="flex-grow p-2 bg-gray-800 text-white rounded-l gold-input">
+      <button type="submit" class="gold-button">Search</button>
     </form>
     <div id="movies" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-6"></div>
   `;
