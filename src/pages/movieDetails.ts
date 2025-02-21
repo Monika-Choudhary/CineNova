@@ -38,21 +38,26 @@ export async function renderMovieDetails() {
     : "<p>Keine Streaming-Anbieter verfügbar</p>";
 
   app.innerHTML = `
-    <a href="/" class="text-gold" id="back">⬅ Zurück</a>
-    <h1 class="text-4xl text-gold font-bold">${movie.title}</h1>
-    <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="rounded mt-4">
-    <p class="mt-4">${movie.overview}</p>
-    <p class="text-gray-400 mt-2">📅 Erscheinungsdatum: ${movie.release_date}</p>
-    <p class="text-gray-400">⭐ Bewertung: ${movie.vote_average}/10</p>
-    <p class="text-gray-400">🎭 Genre: ${genres}</p>
-    
-    <h2 class="text-2xl text-gold font-semibold mt-6">🎭 Hauptdarsteller & Rollen</h2>
+    <a href="/" class="shiny-text" id="back">⬅ Back</a>
+    <h1 class="text-4xl shiny-text font-bold p-2">${movie.title}</h1>
+   <div class="flex justify-center items-center">
+      <div class="gold-border w-full">
+        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="h-auto">
+      </div>
+      <p class=" text-base font-light p-5 text-center mt-4">${movie.overview}</p>
+    </div>
+    <div class="mt-4">
+    <p class="text-gray-400 mt-2"> Release Date: ${movie.release_date}</p>
+    <p class="text-gray-400"> Rating: ${movie.vote_average}/10</p>
+    <p class="text-gray-400"> Genre: ${genres}</p>
+    </div>
+    <h2 class="text-2xl shiny-text font-semibold mt-6"> Lead Actors & Roles</h2>
     <div class="grid grid-cols-5 gap-4 mt-4">${leadActors}</div>
     
-    <h2 class="text-2xl text-gold font-semibold mt-6">📺 Trailer</h2>
+    <h2 class="text-2xl shiny-text font-semibold mt-6"> Trailer</h2>
     ${trailerEmbed}
     
-    <h2 class="text-2xl text-gold font-semibold mt-6">🎥 Streaming-Anbieter</h2>
+    <h2 class="text-2xl shiny-text font-semibold mt-6"> Streaming Providers</h2>
     <div class="mt-4">${providerList}</div>
   `;
   document.getElementById("back")?.addEventListener("click", (event: Event) => {

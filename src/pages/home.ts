@@ -11,7 +11,7 @@ interface Movie {
 export async function renderHome() {
   const app = document.getElementById("app") as HTMLDivElement;
   app.innerHTML = ` 
-  <h1 class="shiny-text text-5xl p-8">
+  <h1 class="shiny-text text-center text-5xl p-8">
      CineNova
     </h1>
     <form id="search-form" class="flex mt-4">
