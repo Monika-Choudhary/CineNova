@@ -1,1 +1,115 @@
 @import "tailwindcss";
+
+
+@theme {
+  --color-gold: #ffd700;
+  --color-background: #121212;
+  --color-cardbackground: #1e1e1e;
+  --color-orangemy: #ffa500;
+  --color-gray: #2d2d2d;
+  --color-red: #f56565;
+
+  --font-zain: Zain, sans-serif;
+  --font-poiret: Poiret One, static;
+}
+
+
+body {
+  @apply bg-gradient-to-br from-[#1a1a2e] to-black text-[#f8f1e5] font-sans;
+  font-family: Zain, sans-serif;
+}
+
+.background-glow {
+  @apply fixed w-screen h-screen;
+  background: radial-gradient(circle, rgba(207,163,73,0.2) 0%, rgba(0,0,0,0) 60%);
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.background-overlay {
+  @apply fixed w-full h-full;
+  background-image: url('../public/assets/film_overlay.png'); /* Optional: transparente PNG mit Filmstreifen */
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: -2;
+}
+
+/* Realistic gold text effect */
+.shiny-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, #b8860b, #ffd700, #daa520, #b8860b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Custom background and overlay styles */
+body {
+  @apply bg-gradient-to-br from-[#1a1a2e] to-black text-[#f8f1e5] font-sans;
+  font-family: 'Poppins', sans-serif;
+}
+
+.background-glow {
+  @apply fixed w-screen h-screen;
+  background: radial-gradient(circle, rgba(207,163,73,0.2) 0%, rgba(0,0,0,0) 60%);
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.background-overlay {
+  @apply fixed w-full h-full;
+  background-image: url('../public/assets/film_overlay.png'); /* Optional: transparente PNG mit Filmstreifen */
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: -2;
+}
+
+/* Realistic gold text effect */
+.shiny-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, #b8860b, #ffd700, #daa520, #b8860b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient border for movie posters */
+.gold-border {
+  position: relative;
+  display: inline-block;
+}
+
+.gold-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(90deg, #b8860b, #ffd700, #daa520, #b8860b);
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.gold-border img {
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Fixed size for movie poster images */
+.fixed-size {
+  width: 200px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}

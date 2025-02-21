@@ -13,7 +13,9 @@ export function MovieCard(movie: Movie) {
   card.className = "block movie-link";
   card.dataset.id = movie.id.toString();
   card.innerHTML = `
-    <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="rounded">
+     <div class="gold-border fixed-size">
+      <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="rounded">
+    </div>
     <h2 class="text-lg mt-2">${movie.title}</h2>
   `;
 

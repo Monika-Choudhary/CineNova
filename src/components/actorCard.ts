@@ -7,10 +7,10 @@ interface Actor {
 
 export function ActorCard(actor: Actor) {
   return `
-      <div class=" text-center">
-        <img src="https://image.tmdb.org/t/p/w185${actor.profile_path}" class=" mx-auto">
-        <p class="text-sm font-semibold mt-2">${actor.name}</p>
-        <p class="text-xs text-gray-400">als ${actor.character}</p>
-      </div>
+       <div class="text-center">
+      <img src="https://image.tmdb.org/t/p/w185${actor.profile_path}" class="rounded-full w-24 h-24 mx-auto">
+      <p class="text-sm font-semibold mt-2">${actor.name}</p>
+      <p class="text-xs text-gray-400">als ${actor.character}</p>
+    </div>
     `;
 }

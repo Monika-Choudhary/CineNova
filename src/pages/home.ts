@@ -11,12 +11,12 @@ interface Movie {
 export async function renderHome() {
   const app = document.getElementById("app") as HTMLDivElement;
   app.innerHTML = ` 
-    <h1 class="text-4xl text-gold text-center font-bold">CineNova 🎬</h1>
+    <h1 class="text-4xl text-gold text-center font-poiret shiny-text font-bold">CineNova 🎬</h1>
     <form id="search-form" class="flex mt-4">
       <input id="search" type="text" placeholder="Film suchen..." class="flex-grow p-2 bg-gray-800 text-white rounded-l">
       <button type="submit" class="rounded-r bg-gold text-black p-2">Search</button>
     </form>
-    <div id="movies" class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6"></div>
+    <div id="movies" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6"></div>
   `;
   const searchForm = document.getElementById("search-form") as HTMLFormElement;
   const searchInput = document.getElementById("search") as HTMLInputElement;

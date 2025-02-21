@@ -25,8 +25,8 @@ export async function renderMovieDetails() {
     (video: any) => video.type === "Trailer"
   );
   const trailerEmbed = trailer
-    ? `<iframe class="w-full h-64 mt-4" src="https://www.youtube.com/embed/${trailer.key}" frameborder="0" allowfullscreen></iframe>`
-    : "<p>Kein Trailer verfügbar</p>";
+  ? `<iframe class="w-full h-64 mt-4" src="https://www.youtube.com/embed/${trailer.key}" frameborder="0" allowfullscreen></iframe>`
+  : "<p>Kein Trailer verfügbar</p>";
 
   const providers = movie["watch/providers"].results?.DE?.flatrate || [];
   const providerList =
@@ -34,10 +34,8 @@ export async function renderMovieDetails() {
       ? providers
           .map(
             (p: any) =>
-              `<img src="https://image.tmdb.org/t/p/w92${p.logo_path}" class="inline-block w-12 h-12">`
-          )
-          .join("")
-      : "<p>Keine Streaming-Anbieter verfügbar</p>";
+              `<img src="https://image.tmdb.org/t/p/w92${p.logo_path}" class="inline-block w-12 h-12">`).join("")
+    : "<p>Keine Streaming-Anbieter verfügbar</p>";
 
   app.innerHTML = `
     <a href="/" class="text-gold" id="back">⬅ Zurück</a>
@@ -57,7 +55,6 @@ export async function renderMovieDetails() {
     <h2 class="text-2xl text-gold font-semibold mt-6">🎥 Streaming-Anbieter</h2>
     <div class="mt-4">${providerList}</div>
   `;
-
   document.getElementById("back")?.addEventListener("click", (event: Event) => {
     event.preventDefault();
     navigateTo("/");
