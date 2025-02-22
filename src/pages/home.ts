@@ -26,7 +26,7 @@ export async function renderHome() {
 
   async function displayMovies(movies: Movie[]) {
     if (movies.length === 0) {
-      moviesContainer.innerHTML = `<p class="text-center text-red-500">Keine Filme gefunden.</p>`;
+      moviesContainer.innerHTML = `<p class="text-center text-red-500">No movies found.</p>`;
       return;
     }
 

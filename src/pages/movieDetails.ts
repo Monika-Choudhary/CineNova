@@ -39,7 +39,7 @@ export async function renderMovieDetails() {
 
   app.innerHTML = `
     <a href="/" class="shiny-text" id="back">⬅ Back</a>
-    <h1 class="text-4xl shiny-text font-bold p-2">${movie.title}</h1>
+    <h1 class="text-4xl shiny-text text-center font-bold p-4">${movie.title}</h1>
    <div class="flex justify-center items-center">
       <div class="gold-border w-full">
         <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="h-auto">
@@ -52,7 +52,7 @@ export async function renderMovieDetails() {
     <p class="text-gray-400"> Genre: ${genres}</p>
     </div>
     <h2 class="text-2xl shiny-text font-semibold mt-6"> Lead Actors & Roles</h2>
-    <div class="grid grid-cols-5 gap-4 mt-4">${leadActors}</div>
+    <div class="grid grid-cols-8 gap-3 mt-4">${leadActors}</div>
     
     <h2 class="text-2xl shiny-text font-semibold mt-6"> Trailer</h2>
     ${trailerEmbed}
