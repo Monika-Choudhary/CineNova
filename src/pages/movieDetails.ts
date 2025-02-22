@@ -25,7 +25,7 @@ export async function renderMovieDetails() {
     (video: any) => video.type === "Trailer"
   );
   const trailerEmbed = trailer
-  ? `<iframe class="w-full h-64 mt-4" src="https://www.youtube.com/embed/${trailer.key}" frameborder="0" allowfullscreen></iframe>`
+  ? `<iframe class="w-full max-w-2xl mx-auto h-100 mt-4" src="https://www.youtube.com/embed/${trailer.key}" frameborder="0" allowfullscreen></iframe>`
   : "<p>Kein Trailer verfügbar</p>";
 
   const providers = movie["watch/providers"].results?.DE?.flatrate || [];
@@ -41,7 +41,7 @@ export async function renderMovieDetails() {
     <a href="/" class="shiny-text" id="back">⬅ Back</a>
     <h1 class="text-4xl shiny-text text-center font-bold p-4">${movie.title}</h1>
    <div class="flex justify-center items-center">
-      <div class="gold-border w-full">
+      <div class="gold-border-no-hover w-full">
         <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="h-auto">
       </div>
       <p class=" text-base font-light p-5 text-center mt-4">${movie.overview}</p>
