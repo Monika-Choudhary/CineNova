@@ -34,7 +34,7 @@ export async function renderMovieDetails() {
       ? providers
           .map(
             (p: any) =>
-              `<img src="https://image.tmdb.org/t/p/w92${p.logo_path}" class="inline-block w-12 h-12">`).join("")
+              `<img src="https://image.tmdb.org/t/p/w92${p.logo_path}" class="inline-block w-18 h-18 m-2">`).join("")
     : "<p>Keine Streaming-Anbieter verfügbar</p>";
 
   app.innerHTML = `
@@ -58,7 +58,7 @@ export async function renderMovieDetails() {
     ${trailerEmbed}
     
     <h2 class="text-2xl shiny-text font-semibold mt-6"> Streaming Providers</h2>
-    <div class="mt-4">${providerList}</div>
+    <div class="mt-4 ">${providerList}</div>
   `;
   document.getElementById("back")?.addEventListener("click", (event: Event) => {
     event.preventDefault();
