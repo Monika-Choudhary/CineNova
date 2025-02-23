@@ -25,8 +25,8 @@ export async function renderMovieDetails() {
     (video: any) => video.type === "Trailer"
   );
   const trailerEmbed = trailer
-  ? `<iframe class="w-full max-w-2xl mx-auto h-100 mt-4 object-cover" src="https://www.youtube.com/embed/${trailer.key}" frameborder="0" allowfullscreen></iframe>`
-  : "<p>Kein Trailer verfügbar</p>";
+    ? `<iframe class="w-full max-w-2xl mx-auto h-100 mt-4 object-cover" src="https://www.youtube.com/embed/${trailer.key}" frameborder="0" allowfullscreen></iframe>`
+    : "<p>Kein Trailer verfügbar</p>";
 
   const providers = movie["watch/providers"].results?.DE?.flatrate || [];
   const providerList =
@@ -34,8 +34,10 @@ export async function renderMovieDetails() {
       ? providers
           .map(
             (p: any) =>
-              `<img src="https://image.tmdb.org/t/p/w92${p.logo_path}" class="inline-block w-20 h-20 m-2">`).join("")
-    : "<p>Keine Streaming-Anbieter verfügbar</p>";
+              `<img src="https://image.tmdb.org/t/p/w92${p.logo_path}" class="inline-block w-20 h-20 m-2">`
+          )
+          .join("")
+      : "<p>Keine Streaming-Anbieter verfügbar</p>";
 
   app.innerHTML = `
     <a href="/" class="shiny-text text-xl" id="back">⬅ Back</a>

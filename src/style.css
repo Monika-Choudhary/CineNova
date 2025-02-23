@@ -10,7 +10,6 @@
   --font-zain: Zain, sans-serif;
   --font-poiret: Poiret One, static;
   --font-kantumruy: Kantumruy Pro, serif;
-
 }
 
 body {
@@ -67,14 +66,6 @@ body {
   z-index: 1; /* Slightly enlarge the image on hover */
 }
 
-/* Fixed size for movie poster images */
-.fixed-size {
-  /* width: 100%; 
-  height: 250px;  */
-  /* object-fit: cover;  */
-  /* min-height: 250px;  */
-}
-
 /* Gold gradient button */
 .gold-button {
   @apply bg-gradient-to-r from-[#b8860b] via-[#ffd700] to-[#daa520] text-black font-bold border-none rounded-r-lg p-2 cursor-pointer transition ease-in-out duration-300;
@@ -93,7 +84,6 @@ body {
   border: 2px solid transparent;
   border-image: linear-gradient(90deg, #b8860b, #ffd700, #daa520, #b8860b) 1;
 }
-
 
 /* Gold border without hover effect */
 .gold-border-no-hover {
@@ -119,21 +109,3 @@ body {
   height: 100%;
   object-fit: cover;
 }
-/* Navbar styles */
-/* header {
-  background-color: #1a1a2e; 
-  padding: 1.5rem; 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-
-/* header .navbar-logo {
-  height: 4rem; 
-  width: 7rem; 
-  margin-left: 0.2rem; 
-} */
-
-/* header h1 {
-  font-size: 2.5rem; 
-} */

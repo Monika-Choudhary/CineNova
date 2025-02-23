@@ -46,5 +46,4 @@ export async function renderHome() {
   // currentMovies.filter((movie: Movie) => movie.id !== 1247019);
   // console.log(currentMovies);
   displayMovies(currentMovies);
-
 }
