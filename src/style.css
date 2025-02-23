@@ -10,6 +10,7 @@
   --font-zain: Zain, sans-serif;
   --font-poiret: Poiret One, static;
   --font-kantumruy: Kantumruy Pro, serif;
+
 }
 
 body {
@@ -62,7 +63,8 @@ body {
 }
 
 .gold-border:hover {
-  transform: scale(1.1); /* Slightly enlarge the image on hover */
+  transform: scale(1.16);
+  z-index: 1; /* Slightly enlarge the image on hover */
 }
 
 /* Fixed size for movie poster images */

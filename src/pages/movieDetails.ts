@@ -39,12 +39,12 @@ export async function renderMovieDetails() {
 
   app.innerHTML = `
     <a href="/" class="shiny-text text-xl" id="back">⬅ Back</a>
-    <h1 class="text-4xl shiny-text text-center font-bold p-4">${movie.title}</h1>
+    <h1 class="text-4xl shiny-text text-center font-bold p-10">${movie.title}</h1>
    <div class="flex justify-center items-center">
       <div class="gold-border-no-hover w-full">
-        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="h-74">
+        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="h-64">
       </div>
-      <p class=" text-base font-light p-5 text-center mt-4">${movie.overview}</p>
+      <p class=" text-base font-light pl-10 pr-20 text-center mt-4">${movie.overview}</p>
     </div>
     <div class="mt-4">
     <p class="text-gray-400 mt-2"> Release Date: ${movie.release_date}</p>

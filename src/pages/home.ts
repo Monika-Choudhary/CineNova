@@ -43,5 +43,8 @@ export async function renderHome() {
   });
 
   const currentMovies = await fetchCurrentMovies();
+  // currentMovies.filter((movie: Movie) => movie.id !== 1247019);
+  // console.log(currentMovies);
   displayMovies(currentMovies);
+
 }
