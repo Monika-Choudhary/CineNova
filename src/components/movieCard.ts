@@ -14,7 +14,7 @@ export function MovieCard(movie: Movie) {
   card.dataset.id = movie.id.toString();
   card.innerHTML = `
      <div class="gold-border fixed-size ">
-      <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="rounded">  
+      <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="rounded w-full h-auto max-h-64 xl:max-h-80">    
     </div>
     <h2 class="text-base text-left my-4">${movie.title}</h2>
   `;

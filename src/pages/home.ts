@@ -15,7 +15,7 @@ export async function renderHome() {
       <input id="search" type="text" placeholder="Search for a movie, tv show..." class="flex-grow p-2 bg-gray-800 text-white rounded-l gold-input">
       <button type="submit" class="gold-button">Search</button>
     </form>
-    <div id="movies" class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-6 px-4 sm:px-6 md:px-8 lg:px-10"></div>
+    <div id="movies" class=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-4 mt-6 px-4 sm:px-6 md:px-8 lg:px-10"></div>
   `;
   const searchForm = document.getElementById("search-form") as HTMLFormElement;
   const searchInput = document.getElementById("search") as HTMLInputElement;
