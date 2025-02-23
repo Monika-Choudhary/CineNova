@@ -42,7 +42,7 @@ export async function renderMovieDetails() {
     <h1 class="text-4xl shiny-text text-center font-bold p-4">${movie.title}</h1>
    <div class="flex justify-center items-center">
       <div class="gold-border-no-hover w-full">
-        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="h-auto">
+        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="h-74">
       </div>
       <p class=" text-base font-light p-5 text-center mt-4">${movie.overview}</p>
     </div>
