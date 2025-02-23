@@ -39,12 +39,12 @@ export async function renderMovieDetails() {
 
   app.innerHTML = `
     <a href="/" class="shiny-text text-xl" id="back">⬅ Back</a>
-    <h1 class="text-4xl shiny-text text-center font-bold p-10">${movie.title}</h1>
-   <div class="flex justify-center items-center">
+    <h1 class="text-2xl sm:text-4xl shiny-text text-center font-bold p-10">${movie.title}</h1>
+   <div class="flex-row sm:flex justify-center items-center">
       <div class="gold-border-no-hover w-full">
-        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="h-64">
+        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="min-h-64 min-w-60">
       </div>
-      <p class=" text-base font-light pl-10 pr-20 text-center mt-4">${movie.overview}</p>
+      <p class=" text-base font-light sm:pl-10 sm:pr-20 text-left mt-4">${movie.overview}</p>
     </div>
     <div class="mt-4">
     <p class="text-gray-400 mt-2"> Release Date: ${movie.release_date}</p>
@@ -52,7 +52,7 @@ export async function renderMovieDetails() {
     <p class="text-gray-400"> Genre: ${genres}</p>
     </div>
     <h2 class="text-2xl shiny-text font-semibold mt-6"> Lead Actors & Roles</h2>
-    <div class="grid grid-cols-8 gap-3 mt-4">${leadActors}</div>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 mt-4">${leadActors}</div>
     
     <h2 class="text-2xl shiny-text font-semibold mt-6"> Trailer</h2>
     ${trailerEmbed}
