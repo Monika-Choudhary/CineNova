@@ -38,7 +38,7 @@ export async function renderMovieDetails() {
     : "<p>Keine Streaming-Anbieter verfügbar</p>";
 
   app.innerHTML = `
-    <a href="/" class="shiny-text" id="back">⬅ Back</a>
+    <a href="/" class="shiny-text text-xl" id="back">⬅ Back</a>
     <h1 class="text-4xl shiny-text text-center font-bold p-4">${movie.title}</h1>
    <div class="flex justify-center items-center">
       <div class="gold-border-no-hover w-full">
