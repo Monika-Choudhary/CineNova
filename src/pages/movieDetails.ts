@@ -34,7 +34,7 @@ export async function renderMovieDetails() {
       ? providers
           .map(
             (p: any) =>
-              `<img src="https://image.tmdb.org/t/p/w92${p.logo_path}" class="inline-block w-18 h-18 m-2">`).join("")
+              `<img src="https://image.tmdb.org/t/p/w92${p.logo_path}" class="inline-block w-16 h-16 m-2">`).join("")
     : "<p>Keine Streaming-Anbieter verfügbar</p>";
 
   app.innerHTML = `

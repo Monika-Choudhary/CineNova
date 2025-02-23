@@ -67,10 +67,10 @@ body {
 
 /* Fixed size for movie poster images */
 .fixed-size {
-  width: 100%; /* Ensure the image takes full width of the container */
-  height: 250px; /* Adjust the height as needed */
-  object-fit: cover; /* Ensure the image covers the entire area */
-  min-height: 250px; /* Ensure a minimum height to prevent overlapping */
+  /* width: 100%; 
+  height: 250px;  */
+  object-fit: cover; 
+  /* min-height: 250px;  */
 }
 
 /* Gold gradient button */
@@ -118,20 +118,20 @@ body {
   object-fit: cover;
 }
 /* Navbar styles */
-header {
-  background-color: #1a1a2e; /* Match the body background color */
-  padding: 0.2rem; /* Add padding */
+/* header {
+  background-color: #1a1a2e; 
+  padding: 1.5rem; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
-header .navbar-logo {
-  height: 4rem; /* Adjust the height of the logo */
-  width: 7rem; /* Adjust the width of the logo */
-  margin-left: 0.2rem; /* Add margin to the left of the logo */
-}
+/* header .navbar-logo {
+  height: 4rem; 
+  width: 7rem; 
+  margin-left: 0.2rem; 
+} */
 
-header h1 {
-  font-size: 2.5rem; /* Adjust the font size of the title */
-}
+/* header h1 {
+  font-size: 2.5rem; 
+} */
