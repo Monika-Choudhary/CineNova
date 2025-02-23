@@ -117,3 +117,21 @@ body {
   height: 100%;
   object-fit: cover;
 }
+/* Navbar styles */
+header {
+  background-color: #1a1a2e; /* Match the body background color */
+  padding: 0.2rem; /* Add padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .navbar-logo {
+  height: 4rem; /* Adjust the height of the logo */
+  width: 7rem; /* Adjust the width of the logo */
+  margin-left: 0.2rem; /* Add margin to the left of the logo */
+}
+
+header h1 {
+  font-size: 2.5rem; /* Adjust the font size of the title */
+}

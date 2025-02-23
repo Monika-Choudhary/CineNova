@@ -11,10 +11,7 @@ interface Movie {
 export async function renderHome() {
   const app = document.getElementById("app") as HTMLDivElement;
   app.innerHTML = ` 
-  <h1 class="shiny-text text-center text-5xl p-8">
-     CineNova
-    </h1>
-    <form id="search-form" class="flex mt-4">
+      <form id="search-form" class="flex mt-4">
       <input id="search" type="text" placeholder="Search for a movie, tv show..." class="flex-grow p-2 bg-gray-800 text-white rounded-l gold-input">
       <button type="submit" class="gold-button">Search</button>
     </form>
