@@ -9,8 +9,8 @@ This is a simple film database that displays information about movies from the T
 
 ## Features
 
-- **Search Movies:** Allows searching for movies based on title or year.
-- **Movie Details:** Displays details such as title, year, genre, director, actors, ratings, and more.
+- **Search Movies:** Allows searching for movies based on title.
+- **Movie Details:** Displays details such as title, year, genre, actors, ratings, and more.
 - **Responsive Design:** The user interface is optimized for both desktop and mobile devices.
 
 ## Technologies
@@ -18,5 +18,5 @@ This is a simple film database that displays information about movies from the T
 - **TypeScript:** For building the application.
 - **Tailwind CSS:** For styling the user interface.
 - **Bun Vite:** For bundling and development.
-- **OMDb API:** For movie data.
+- **TMDB API:** For movie data.
 
