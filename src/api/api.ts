@@ -26,3 +26,22 @@ export async function fetchCurrentMovies() {
 
   return data.results;
 }
+
+export async function fetchMoviesByActor(query: string) {
+  const response = await fetch(
+    `${BASE_URL}/search/person?api_key=${api_key}&query=${query}`
+  );
+  const data = await response.json();
+  const actorId = data.results[0]?.id;
+
+  if (!actorId) {
+    return [];
+  }
+
+  const moviesResponse = await fetch(
+    `${BASE_URL}/discover/movie?api_key=${api_key}&with_cast=${actorId}`
+  );
+  const moviesData = await moviesResponse.json();
+
+  return moviesData.results;
+}

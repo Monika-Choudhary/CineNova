@@ -1,5 +1,5 @@
 // filepath: /home/dci-student/Documents/web-dev/projects/cinenova_film_database/src/pages/home.ts
-import { fetchCurrentMovies, fetchMovies } from "../api/api";
+import { fetchCurrentMovies, fetchMovies, fetchMoviesByActor } from "../api/api";
 import { MovieCard } from "../components/movieCard";
 
 interface Movie {
@@ -38,7 +38,10 @@ export async function renderHome() {
     const query = searchInput.value.trim();
     if (!query) return;
 
-    const movies: Movie[] = await fetchMovies(query);
+    let movies: Movie[] = await fetchMovies(query);
+    if (movies.length === 0) {
+      movies = await fetchMoviesByActor(query);
+    }
     displayMovies(movies);
   });
 
