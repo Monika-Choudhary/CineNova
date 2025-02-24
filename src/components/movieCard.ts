@@ -13,10 +13,10 @@ export function MovieCard(movie: Movie) {
   card.className = "block movie-link";
   card.dataset.id = movie.id.toString();
   card.innerHTML = `
-     <div class="gold-border ">
-      <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="rounded w-full min-h-64 max-h-64 object-cover">    
+     <div class="gold-border  ">
+      <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="rounded w-full min-h-74 max-h-74 object-cover">    
     </div>
-    <h2 class="text-base text-left mb-6 pt-4">${movie.title}</h2>
+    <h2 class="text-lg text-left mb-6 pt-4">${movie.title}</h2>
   `;
 
   card.addEventListener("click", (event) => {
