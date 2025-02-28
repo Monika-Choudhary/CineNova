@@ -12,7 +12,7 @@ export async function renderHome() {
   const app = document.getElementById("app") as HTMLDivElement;
   app.innerHTML = ` 
    <form id="search-form" class="flex mt-10 mb-16 px-4 sm:px-6 md:px-8 lg:px-10 ">
-      <input id="search" type="text" placeholder="Search for a movie, actor..." class="flex-grow p-2 bg-gray-800 text-white rounded-l gold-input">
+      <input id="search" type="text" placeholder="Search for a movie, actor..." class="flex-grow p-2 bg-gray-800 text-white rounded-l gold-input lg:h-15 lg:placeholder:text-2xl">
       <button type="submit" class="gold-button">Search</button>
     </form>
     <div id="movies" class=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-4 mt-6 px-4 sm:px-6 md:px-8 lg:px-10"></div>
