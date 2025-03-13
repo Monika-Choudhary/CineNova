@@ -42,24 +42,24 @@ export async function renderMovieDetails() {
   app.innerHTML = `
     <a href="/" class="shiny-text text-3xl" id="back">⬅ Back</a>
     <h1 class="text-2xl sm:text-4xl shiny-text text-center font-bold p-10">${movie.title}</h1>
-   <div class="flex-row sm:flex justify-center items-center">
-      <div class="gold-border-no-hover w-full">
-        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="min-h-64 min-w-60 ">
+   <div class="flex-row sm:flex justify-start items-center">
+      <div class="gold-border-no-hover">
+        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="">
       </div>
-      <p class=" text-base font-light sm:pl-10 sm:pr-20 text-left mt-4">${movie.overview}</p>
+      <p class=" text-base font-light sm:pl-10 sm:pr-20 text-left mt-4 xl:text-2xl">${movie.overview}</p>
     </div>
-    <div class="mt-4">
-    <p class="text-gray-400 mt-2"> Release Date: ${movie.release_date}</p>
+    <div class="mt-4 xl:text-2xl">
+    <p class="text-gray-400 mt-2 "> Release Date: ${movie.release_date}</p>
     <p class="text-gray-400"> Rating: ${movie.vote_average}/10</p>
     <p class="text-gray-400"> Genre: ${genres}</p>
     </div>
-    <h2 class="text-2xl shiny-text font-semibold mt-6"> Lead Actors & Roles</h2>
+    <h2 class="text-3xl shiny-text font-semibold mt-6"> Lead Actors & Roles</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 mt-4">${leadActors}</div>
     
-    <h2 class="text-2xl shiny-text font-semibold mt-6"> Trailer</h2>
+    <h2 class="text-3xl shiny-text font-semibold mt-6"> Trailer</h2>
     ${trailerEmbed}
     
-    <h2 class="text-2xl shiny-text font-semibold mt-6"> Streaming Providers</h2>
+    <h2 class="text-3xl shiny-text font-semibold mt-6"> Streaming Providers</h2>
     <div class="mt-4 ">${providerList}</div>
   `;
   document.getElementById("back")?.addEventListener("click", (event: Event) => {
