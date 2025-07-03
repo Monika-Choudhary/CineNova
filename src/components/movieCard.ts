@@ -1,4 +1,3 @@
-// filepath: /home/dci-student/Documents/web-dev/projects/cinenova_film_database/src/components/MovieCard.ts
 import { navigateTo } from "../router/router";
 
 interface Movie {
